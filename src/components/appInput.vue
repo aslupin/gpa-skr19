@@ -1,3 +1,4 @@
+
 <template>
   <div class="appInput">
         <div class="container">
@@ -29,37 +30,37 @@
                             <tr>
                                 <td>ภาษาไทย</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s1" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s1" placeholder="4.00">
                                     </td>
                             </tr>
                              <tr>
                                 <td>คณิตศาสตร์</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s2" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s2" placeholder="4.00">
                                     </td>
                             </tr>
                              <tr>
                                 <td>คณิตศาสตร์-เพิ่มเติม</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s3" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s3" placeholder="4.00">
                                     </td>
                             </tr>
                               <tr>
                                 <td>ฟิสิกส์-เพิ่มเติม</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s4" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s4" placeholder="4.00">
                                     </td>
                             </tr>
                              <tr>
                                 <td>เคมี-เพิ่มเติม</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s5" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s5" placeholder="4.00">
                                     </td>
                             </tr>
                              <tr>
                                 <td>ชีววิทยา-เพิ่มเติม</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s6" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s6" placeholder="4.00">
                                     </td>
                             </tr>
                          
@@ -80,50 +81,57 @@
                             <tr>
                                 <td>สังคมศึกษา</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s7" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s7" placeholder="4.00">
                                     </td>
                             </tr>
                              <tr>
                                 <td>สุขศึกษาเเละพลศึกษา</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s8" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s8" placeholder="4.00">
                                     </td>
                             </tr>
                              <tr>
                                 <td>ทัศนศิลป์</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s9" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s9" placeholder="4.00">
                                     </td>
                             </tr>
                              <tr>
                                 <td>การงานอาชีพ</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s10" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s10" placeholder="4.00">
                                     </td>
                             </tr>
                              <tr>
                                 <td>คอมพิวเตอร์</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s11" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s11" placeholder="4.00">
                                     </td>
                             </tr>
                              <tr>
                                 <td>Eng</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s12" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s12" placeholder="4.00">
                                     </td>
                             </tr>
                               <tr>
                                 <td>Eng-T</td>
                                     <td >
-                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s13" placeholder="4.00">
+                                   <input type="number" step="0.01" size="1"  maxlength="4" class="form-control" id="s13" placeholder="4.00">
                                     </td>
                             </tr>
                             
                         </tbody>
                     </table>
+
+                    
 </div>
- <button type="button" class="btn btn-success">Success</button>
+
+
+ 
+ 
+ <button  v-on:click="greet" class="btn btn-success">Success</button>
+ 
 
 <div style="padding-top:200px;"></div>
             </div>
@@ -137,15 +145,31 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'appInput',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+    rm607:[1.0,1.0,2.0,1.5,1.5,1.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0] 
+    }
+  },
+  methods:{
+    greet: function(){
+     
+      var sumUnit = 15.5;
+      var sumScUnit = 0.0;
+    
+     for(var i =0;i<=12;i++){
+        sumScUnit += (this.rm607[i] * document.getElementById("s" + (i+1)).value);
+      }
+      var gpa = sumScUnit/sumUnit;
+      alert('gpa = ' + gpa);
     }
   }
 }
 </script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
