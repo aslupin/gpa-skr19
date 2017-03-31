@@ -1,0 +1,172 @@
+<template>
+  <div class="appInput">
+        <div class="container">
+            <div class="row">
+
+
+                <form class="form-inline">
+                    <div class="form-group">
+
+                        <label for="inputFistName">ห้อง</label>
+                        <select class="form-control">
+                                 <option>ม.607 | sci-math (Engineer)</option>
+                               
+                            </select>
+                    </div>
+                    </form>
+                  
+
+  <div class="col-xs-12 col-sm-12 col-md-6 ">
+                    <table class="table table-condensed" style="color:#000;font-size:17.3px;">
+                        <thead>
+                            <tr>
+                                <th>วิชา</th>
+                                <th>เกรด</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>ภาษาไทย</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s1" placeholder="4.00">
+                                    </td>
+                            </tr>
+                             <tr>
+                                <td>คณิตศาสตร์</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s2" placeholder="4.00">
+                                    </td>
+                            </tr>
+                             <tr>
+                                <td>คณิตศาสตร์-เพิ่มเติม</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s3" placeholder="4.00">
+                                    </td>
+                            </tr>
+                              <tr>
+                                <td>ฟิสิกส์-เพิ่มเติม</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s4" placeholder="4.00">
+                                    </td>
+                            </tr>
+                             <tr>
+                                <td>เคมี-เพิ่มเติม</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s5" placeholder="4.00">
+                                    </td>
+                            </tr>
+                             <tr>
+                                <td>ชีววิทยา-เพิ่มเติม</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s6" placeholder="4.00">
+                                    </td>
+                            </tr>
+                         
+                            
+                        </tbody>
+                    </table>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 ">
+                    <table class="table table-condensed" style="color:#000;font-size:17.3px;">
+                        <thead>
+                            <tr>
+                                <th>วิชา</th>
+                                <th>เกรด</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>สังคมศึกษา</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s7" placeholder="4.00">
+                                    </td>
+                            </tr>
+                             <tr>
+                                <td>สุขศึกษาเเละพลศึกษา</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s8" placeholder="4.00">
+                                    </td>
+                            </tr>
+                             <tr>
+                                <td>ทัศนศิลป์</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s9" placeholder="4.00">
+                                    </td>
+                            </tr>
+                             <tr>
+                                <td>การงานอาชีพ</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s10" placeholder="4.00">
+                                    </td>
+                            </tr>
+                             <tr>
+                                <td>คอมพิวเตอร์</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s11" placeholder="4.00">
+                                    </td>
+                            </tr>
+                             <tr>
+                                <td>Eng</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s12" placeholder="4.00">
+                                    </td>
+                            </tr>
+                              <tr>
+                                <td>Eng-T</td>
+                                    <td >
+                                   <input type="number" size="1"  maxlength="4" class="form-control" id="s13" placeholder="4.00">
+                                    </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+</div>
+ <button type="button" class="btn btn-success">Success</button>
+
+<div style="padding-top:200px;"></div>
+            </div>
+
+            <!-- /.Row-->
+        </div>
+        <!-- /.Container-->
+   </div>
+
+    
+</template>
+
+<script>
+export default {
+  name: 'appInput',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.appInput{
+   font-family: 'Kanit', sans-serif;
+}
+h1, h2 {
+  font-weight: normal;
+}
+
+ul { 
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
+</style>
