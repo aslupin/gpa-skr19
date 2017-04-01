@@ -9,8 +9,9 @@
                     <div class="form-group">
 
                         <label for="inputFistName">ห้อง</label>
-                        <select class="form-control">
-                                 <option>ม.607 | sci-math (Engineer)</option>
+                        <select class="form-control" id="room-select">
+                                 <option value="607">ม.607 | sci-math (engineer)</option>
+                                <option value="605">ม.605 | sci-math (health-sci)</option>
                                
                             </select>
                     </div>
@@ -150,21 +151,32 @@ export default {
   name: 'appInput',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
-    rm607:[1.0,1.0,2.0,1.5,1.5,1.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0] 
+        
+          rm605:[1.0,1.0,2.0,1.5,1.5,1.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0],
+          rm607:[1.0,1.0,2.0,1.5,1.5,1.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0]
     }
   },
   methods:{
     greet: function(){
-     
+        var e = document.getElementById("ddlViewBy");
+
+
+     var selectRoom = document.getElementById("room-select");
+     var dataUnit = selectRoom.options[selectRoom.selectedIndex].value;
+     //alert(dataUnit);
       var sumUnit = 15.5;
       var sumScUnit = 0.0;
-    
      for(var i =0;i<=12;i++){
-        sumScUnit += (this.rm607[i] * document.getElementById("s" + (i+1)).value);
+         if(dataUnit == 607)
+         sumScUnit += (this.rm607[i] * document.getElementById("s" + (i+1)).value);
+         else if(dataUnit == 605) 
+         sumScUnit += (this.rm605[i] * document.getElementById("s" + (i+1)).value);
       }
       var gpa = sumScUnit/sumUnit;
+      if(gpa != 0)
       alert('gpa = ' + gpa);
+      else
+      alert("ใส่ข้อมูลให้ครบด้วยครับ :D");
     }
   }
 }
