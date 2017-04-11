@@ -1,4 +1,5 @@
 # gpa-skr19
+I build this project for learning about vuejs.
 
 > A Vue.js project
 
